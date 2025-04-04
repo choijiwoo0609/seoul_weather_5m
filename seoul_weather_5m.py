@@ -8,7 +8,7 @@ import os
 # key number 숨기기!
 MY_API_KEY = os.getenv("OPENWEATHER_API_KEY")
 CITY = "Seoul"
-URL = f"https://api.openweathermap.org/data/2.5/weather?q={city_name}&appid={MY_API_KEY}&units=metric"
+URL = f"https://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={MY_API_KEY}&units=metric"
 
 response = requests.get(URL)
 data = response.json()
